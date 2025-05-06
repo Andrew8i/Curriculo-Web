@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/index.css">
+</head>
+<body class="container">
+        <header>
+            <div>
+                <img src="assets/img/mypicture.jpg" alt="">
+            </div>
+            <h1 style="padding: 8px 0 0 0;">Izaú André Pereira paz</h1>
+            <h2 style="padding: 6px 0 ;">Desenvolvedor de Software</h2>
+            <h3>Olá, meu nome é André. Estou cursando Análise e Desenvolvimento de Sistemas e me aprofundando em programação, com foco em Backend, Dados e novas tecnologias</h3>
+
+        </header>     <!-- termina a div da classe header -->
+        <main>
+
+                <div class="box">
+                    <h4>Objetivo</h4>
+                    <p style="padding-top: 1rem;">Desenvolvimento Fullstack com Python e Frameworks</p>  
+                    <h4 style="padding-top: 1rem;">Formação Educacional</h4>
+                    <p style="padding-top: 1rem;">  ETE Ariano Vilar Suassuna – Curso Técnico <br>
+                    Desenvolvimento de Sistemas (cursando) <br>
+               
+                   Uniasselvi – Ensino Superior <br>  
+               
+               Análise e Desenvolvimento de Sistemas (cursando) </p>
+
+                </div>
+                <div class="box">
+                    <h4>Qualificações</h4>
+                    <p  style="padding-top: 1rem;">Desenvolvimento Back-end com Python – DIO <br>
+                        Java - DIO <br>
+                        Photoshop e Autocad – Instituto mix<br>          
+                        Banco de Dados – DIO <br>                    
+                        Git e GitHub  - DIO </p>
+                </div>
+
+        </main>
+        <footer>
+            
+                <div>
+                <h3>Paranatama-PE</h3>
+                <h4>Contato</h4>
+                <p>Email: Izauandrep@gmail.com</p>
+                <p>Celular: 8002-8922</p>
+                </div>
+                <div class="link">
+                    <ol>
+                           <li class="media">
+                            <a href="https://www.linkedin.com/in/iza%C3%BA-andr%C3%A9-pereira-paz-919673285/" target="_blank">
+                                <img src="https://images.icon-icons.com/699/PNG/512/linkedin_icon-icons.com_61623.png"  alt=""></a>
+                        </li>
+                        <li class="media">
+                            <a href="https://github.com/Andrew8i" target="_blank">
+                                <img src="https://images.icon-icons.com/2845/PNG/512/github_logo_icon_181401.png" alt="" ></a>
+                        </li>
+                        <li class="media">
+                            <a href="https://www.instagram.com/izauandre8/" target="_blank">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2KXd5ObyTOcxoR1kp-xE6zE4-AqJXwLdMSg&s" alt="" style="border-radius: 20%;"></a>
+                        </li>
+                    </ol>
+                </div>
+        </footer>
+
+</body>
+</html>
+
+
+css
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Times New Roman', Times, serif;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color:  #001219;
+    min-height: 100vh;
+    
+}
+header {
+    text-align: center;
+    margin: 0;
+    color: #ffffff;
+    padding: 20px ;
+    background-color: #02040f;
+
+}
+
+header div{
+    text-align: center;
+    width: 200px;  
+    max-width: fit-content;
+    margin: auto;
+}
+
+header img{
+    display: block;
+    padding: .25rem;
+    background-color: rgb(3, 54, 14);
+    max-width: 100%;
+    width: 150px;
+    border-radius: 100%;
+   
+}
+
+main{
+    display:flex;
+    justify-content: center;
+    gap: 10px;
+    flex: 1 0 0;
+}
+
+main div{
+    padding: 10px;
+    
+}
+.box{
+    background-color: #748cab;
+    margin: 15px;
+}
+
+
+footer{
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
+    background-color: #02040f;
+    color: #ffffff;
+    
+}
+
+footer h3,h4{
+    padding: 5px 5px 1px;
+}
+footer p,a {
+    padding: 0 5px;
+}
+
+footer ol{
+    list-style-type: none;
+    
+}
+
+.media img{
+    width: 50px;
+    border-radius: 20%;
+    background-color: #ffffff;
+}
+.link ol{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 10px;
+}
